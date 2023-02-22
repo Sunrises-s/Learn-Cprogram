@@ -218,4 +218,8 @@ struct stu
 int main()
 {
 	struct stu a;
+	a.age = 12;
+	
+
+	return 0;
 }
