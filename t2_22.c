@@ -159,17 +159,85 @@
 //	return 0;
 //}
 
-int cnt = 0;
-int fib(int n)
-{
-	cnt++;
-	if (n == 0) { return 1; }
-	else if (n == 1) { return 2; }
-	else { return fib(n - 1) + fib(n - 2); }
-}
+//int/* cnt = 0;
+//int fib(int n)
+//{
+//	cnt++;
+//	if (n == 0) { return 1; }
+//	else if (n == 1) { return 2; }
+//	else { return fib(n - 1) + fib(n - 2); }
+//}
+//
+//void main()
+//{
+//	fib(8);
+//	printf("%d", cnt);
+//	
+//}*/
 
-void main()
+/*
+	输入两个正整数A和B
+	输出A和B的最小公倍数
+	示例: 输入5 7  输出35
+*/
+//int mini(int a, int b)
+//{
+//	int c = 1;
+//	while (1) 
+//	{
+//		if ((a * c % b) == 0) { break; }
+//		else 
+//		{
+//			c++;
+//		}
+//	}
+//	return a * c;
+//}
+//int main(void)
+//{
+//	unsigned int A = 0;
+//	unsigned int B = 0;
+//	scanf("%d %d",&A, &B);
+//	printf("最小公倍数是%d", mini(A, B));
+//	return 0;
+//}
+
+//int main()
+//{
+//	char arr[20] = { 0 };
+//	gets(arr);
+//	printf("%s", arr);
+//	return 0;
+//}
+
+//请简述大端字节序和小端字节序的概念，设计一个小程序来判断当前机器的字节序。
+//int main()
+//{
+//	int a = 0x3abf7890;
+//	char* pa = (char *) & a;
+//	printf("%x--->%p\n", *pa, pa);
+//	printf("%x--->%p\n", *(pa + 1), pa + 1);
+//	printf("%x--->%p\n", *(pa + 2), pa + 2);
+//	printf("%x--->%p\n", *(pa + 3), pa + 3);
+//	return 0;
+//}
+
+//int main()
+//{
+//	int i = -20;
+//	unsigned int j = 10;
+//	printf("%d\n", i + j);
+//	return 0;
+//}
+
+int main()
 {
-	fib(8);
-	printf("%d", cnt);
+	int n = 9;
+	float* pFloat = (float*)&n;
+	printf("n的值为：%d\n", n);
+	printf("*pFloat的值为：%f\n", *pFloat);
+	*pFloat = 9.0;
+	printf("num的值为：%d\n", n);
+	printf("*pFloat的值为：%f\n", *pFloat);
+	return 0;
 }
