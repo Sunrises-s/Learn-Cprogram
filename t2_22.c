@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <assert.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <assert.h>
+//#include <string.h>
 //int main(void)
 //{
 //	int i = 0;
@@ -230,14 +230,272 @@
 //	return 0;
 //}
 
-int main()
+//int main()
+//{
+//	int n = 9;
+//	float* pFloat = (float*)&n;
+//	printf("n的值为：%d\n", n);
+//	printf("*pFloat的值为：%f\n", *pFloat);
+//	*pFloat = 9.0;
+//	printf("num的值为：%d\n", n);
+//	printf("*pFloat的值为：%f\n", *pFloat);
+//	return 0;
+//}
+
+//int main()
+//{
+//	char str1[] = "hello bit.";
+//	char str2[] = "hello bit.";
+//	const char* str3 = "hello bit.";
+//	const char* str4 = "hello bit.";
+//	if (str1 == str2)
+//		printf("str1 and str2 are same\n");
+//	else
+//		printf("str1 and str2 are not same\n");
+//	if (str3 == str4)
+//		printf("str3 and str4 are same\n");
+//	else
+//		printf("str3 and str4 are not same\n");
+//	return 0;
+//}
+
+// 打印一个菱形,13行
+//int main()
+//{
+//	int n = 100;
+//	//scanf("%d", &n);
+//	//打印上三角
+//	for (int i = 0; i < n; i++)
+//	{
+//		//打印空格
+//		for (int j = 0; j < (n-1-i); j++)
+//		{
+//			printf(" ");
+//		}
+//		//打印*
+//		for (int k = 0; k < (2 * i + 1); k++)
+//		{
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//	//打印下三角
+//	for (int i = 0; i < n - 1; i++)
+//	{
+//		//打印空格
+//		for (int j = 0; j <= i; j++)
+//		{
+//			printf(" ");
+//		}
+//		//打印*
+//		for (int k = 0; k < (2*n-2*i-3); k++)
+//		{
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//
+//	return 0;
+//}
+
+// 喝汽水, 一瓶汽水1块钱, 两个空瓶换一瓶, 给你20块钱, 换多少汽水?
+//int main()
+//{
+//	int m = 1;//钱
+//	int pop = m;//汽水数
+//	int pop_b = 0;//汽水瓶数
+//	int pop_d = 0;//喝了几瓶
+//	do
+//	{
+//		//将汽水喝光
+//		pop_b += pop;
+//		pop_d += pop;
+//		//汽水瓶换汽水
+//		pop = pop_b / 2;
+//		pop_b = pop_b % 2;
+//
+//	} while (pop);
+//	printf("喝了%d瓶汽水, 现在还有%d个汽水瓶", pop_d, pop_b);
+//	return 0;
+//}
+
+//输入描述：
+//输入一个浮点数
+//输出描述：
+//输出一个浮点数，保留三位小数
+//#include <stdio.h>
+//int main()
+//{
+//	double a = 0;
+//	scanf("%lf", &a);
+//	printf("%.3f", a);
+//	return 0;
+//}
+
+//输入描述：
+//输入一个字符，范围在ascii范围内
+//输出描述：
+//输出这个字符
+
+//#include <stdio.h>
+//int main(void) 
+//{
+//	char c = 0;
+//	scanf("%c", &c);
+//	printf("%c", c);
+//	return 0;
+//}
+
+//输入描述：
+//一行输入 3 个整数，用空格隔开。
+//输出描述：
+//请输出第二个整数的值。
+//#include <stdio.h>
+//int main(void)
+//{
+//	int a, b, c;
+//	scanf("%d %d %d", &a, &b, &c);
+//	printf("%d", b);
+//	return 0;
+////}
+//输入描述：
+//一行读入一个 char 类型的字符。
+//输出描述：
+//输出这个字符组成的 3 * 3 矩形。
+//#include <stdio.h>
+//int main(void)
+//{
+//	char c = getchar();
+//	for (int i = 0; i < 3; i++)
+//	{
+//		for (int j = 0; j < 3; j++)
+//		{
+//			printf("%c", c);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+//输入描述：
+//输入一个char类型字符
+//输出描述：
+//输出一个用这个字符填充的对角线长5个字符，倾斜放置的菱形
+//#include <stdio.h>
+//int main(void)
+//{
+//	char c = getchar();
+//	//打印上三角
+//	for (int i = 0; i < 3; i++)
+//	{
+//		//打印空格
+//		for (int j = 0; j < 2-i; j++)
+//		{
+//			printf(" ");
+//		}
+//		//打印字符
+//		for (int k = 0; k < 2*i+1; k++)
+//		{
+//			printf("%c", c);
+//		}
+//		printf("\n");
+//	}
+//	//打印下三角
+//	for (int i = 0; i < 2; i++)
+//	{
+//		//打印空格
+//		for (int j = 0; j < i+1; j++)
+//		{
+//			printf(" ");
+//		}
+//		//打印字符
+//		for (int k = 0; k < 3-i*2; k++)
+//		{
+//			printf("%c", c);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+//输入一个字符，输出该字符相应的ASCII码。
+//#include <stdio.h>
+//int main(void)
+//{
+//	char c = getchar();
+//	printf("%d", c);
+//	return 0;
+//}
+
+//将浮点数转换为整数类型，要求四舍五入。
+//#include <stdio.h>
+//int main(void)
+//{
+//	double a = 0;
+//	scanf("%lf", &a);
+//	//正数情况下
+//	if (a > 0) {
+//		if ((a - (int)a) > 0.5) 
+//		{
+//			printf("%d", (int)a + 1);
+//		}
+//		else
+//			printf("%d", (int)a);
+//	}
+//	else {
+//		if ((a - (int)a) < -0.5)
+//		{
+//			printf("%d", (int)a - 1);
+//		}
+//		else
+//			printf("%d", (int)a);
+//	}
+//	
+//	return 0;
+//}
+
+//输入3科成绩，然后把三科成绩输出，成绩为整数形式。
+//#include <stdio.h>
+//int main(void)
+//{
+//	int a, b, c;
+//	scanf("%d %d %d", &a, &b, &c);
+//	printf("score1=%d,score2=%d,score3=%d", a, b, c);
+//	return 0;
+//}
+
+//依次输入一个学生的学号，以及3科（C语言，数学，英语）成绩，
+//在屏幕上输出该学生的学号，3科成绩（注：输出成绩时需进行四舍五入且保留2位小数）。
+#include <stdio.h>
+#include <math.h>
+double siwu(double a)
 {
-	int n = 9;
-	float* pFloat = (float*)&n;
-	printf("n的值为：%d\n", n);
-	printf("*pFloat的值为：%f\n", *pFloat);
-	*pFloat = 9.0;
-	printf("num的值为：%d\n", n);
-	printf("*pFloat的值为：%f\n", *pFloat);
+	a *= 100;
+	int a_int = (int)a;
+	a = a - a_int;
+	if (a > 0.5 || (a == 0.5 && a_int % 2 != 0))
+	{
+		a_int++;
+	}
+	return ((double)a_int) / 100;
+}
+
+//double siwu(double x) {
+//	double factor = pow(10, 2);
+//	double rounded = round(x * factor);
+//	return rounded / factor;
+//}
+
+int main(void)
+{
+	// 输入学号
+	unsigned long long int a;
+	double b, c, d;
+	//scanf("%lld;%lf,%lf,%lf", &a, &b, &c, &d);
+	//printf("The each subject score of No. %lld is %.2lf, %.2lf, %.2lf.", a, siwu(b), siwu(c), siwu(d));
+	printf("%.2lf\n", siwu(89.457));
+	printf("%.2lf\n", siwu(89.45));
+	printf("%.2lf\n", siwu(89.454));
+
 	return 0;
 }
