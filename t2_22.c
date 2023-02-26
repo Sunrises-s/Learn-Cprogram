@@ -466,36 +466,133 @@
 
 //依次输入一个学生的学号，以及3科（C语言，数学，英语）成绩，
 //在屏幕上输出该学生的学号，3科成绩（注：输出成绩时需进行四舍五入且保留2位小数）。
-#include <stdio.h>
-#include <math.h>
-double siwu(double a)
-{
-	a *= 100;
-	int a_int = (int)a;
-	a = a - a_int;
-	if (a > 0.5 || (a == 0.5 && a_int % 2 != 0))
-	{
-		a_int++;
-	}
-	return ((double)a_int) / 100;
-}
-
+//#include <stdio.h>
+//#include <math.h>
+//
 //double siwu(double x) {
 //	double factor = pow(10, 2);
 //	double rounded = round(x * factor);
 //	return rounded / factor;
 //}
+//
+//int main(void)
+//{
+//	// 输入学号
+//	unsigned long long int a;
+//	double b, c, d;
+//	scanf("%lld;%lf,%lf,%lf", &a, &b, &c, &d);
+//	printf("The each subject score of No. %lld is %.2lf, %.2lf, %.2lf.", a, siwu(b), siwu(c), siwu(d));
+//
+//	return 0;
+//}
 
-int main(void)
-{
-	// 输入学号
-	unsigned long long int a;
-	double b, c, d;
-	//scanf("%lld;%lf,%lf,%lf", &a, &b, &c, &d);
-	//printf("The each subject score of No. %lld is %.2lf, %.2lf, %.2lf.", a, siwu(b), siwu(c), siwu(d));
-	printf("%.2lf\n", siwu(89.457));
-	printf("%.2lf\n", siwu(89.45));
-	printf("%.2lf\n", siwu(89.454));
+//描述
+//输入一个人的出生日期（包括年月日），将该生日中的年、月、日分别输出。
 
-	return 0;
-}
+//数据范围：年份满足1990≤y≤2015 ，月份满足1≤m≤12  ，日满足1≤d≤30
+//输入描述：
+//输入只有一行，出生日期，包括年月日，年月日之间的数字没有分隔符。
+//输出描述：
+//三行，第一行为出生年份，第二行为出生月份，第三行为出生日期。输出时如果月份或天数为1位数，需要在1位数前面补0。
+//#include <stdio.h>
+//int main()
+//{
+//	int bore = 0;
+//	scanf("%8d",&bore);
+//	while (getchar() != '\n');//
+//	//前四位是年份,两位是月份,两位是日
+//	int year = bore / 10000;
+//	int day = bore % 100;
+//	int month = (bore / 100) % 100;
+//	printf("year=%04d\n", year);
+//	printf("month=%02d\n", month);
+//	printf("date=%02d\n", day);
+//
+//	return 0;
+//}
+
+/*
+  输入两个整数，范围-2^31 ~ 2^31-1，交换两个数并输出。
+*/
+//#include <stdio.h>
+//int main(void)
+//{
+//	int a, b;
+//	scanf("a=%d,b=%d", &a, &b);
+//	a = a ^ b;
+//	b = a ^ b;
+//	a = a ^ b;
+//	printf("a=%d,b=%d", a, b);
+//	return 0;
+//}
+
+/*
+	输入大写英文字母, 输出小写英文字母
+*/
+//#include <stdio.h>
+//int main(void)
+//{
+//	char c = 0;
+//	while (scanf("%c", &c) != EOF) {
+//		while (getchar() != '\n');
+//		printf("%c\n", c+32);
+//	}
+//	return 0;
+//}
+
+/*
+   给你一个十六进制数,打印一个十进制数,限制15位字宽
+*/
+//#include <stdio.h>
+//int main(void)
+//{
+//	int a = 0xABCDEF;
+//	printf("%15d", a);
+//	return 0;
+//}
+
+/*
+	请输出十进制整数1234对应的八进制和十六进制。
+*/
+//#include <stdio.h>
+//int main(void)
+//{
+//	int a = 1234;
+//	printf("%#o %#X", a, a);
+//	return 0;
+//}
+
+/*
+	从键盘读入一个字符，一个整数，一个单精度浮点数，按顺序输出它们，并用空格分隔，浮点数保留 6 位小数。
+	按顺序输出字符、整数、单精度浮点数，用空格分隔，浮点数保留 6 位小数
+*/
+//#include <stdio.h>
+//int main(void)
+//{
+//	char a;
+//	int b;
+//	float c;
+//	scanf("%c", &a);
+//	scanf("%d", &b);
+//	scanf("%f", &c);
+//	printf("%c %d %.6f", a, b, c);
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main(void)
+//{
+//	int a, b, c;
+//	scanf("%d %d %d", &a, &b, &c);
+//	printf("%d%8d%8d", a, b, c);
+//	return 0;
+//}
+
+//#include <stdio.h>
+//
+//int main() {
+//	int a, b;
+//	scanf("%d %d", &a, &b);
+//	printf("%d", a+b);
+//	return 0;
+//}
